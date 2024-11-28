@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Công cụ tính thuế GTGT</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Máy Tính VAT</h1>
+        <div class="form-group">
+            <label for="input1">Số tiền:</label>
+            <input type="text" id="input1" placeholder="Nhập số tiền"/>
+        </div>
+        <div class="form-group">
+            <label for="selected2">Thuế GTGT:</label>
+            <select id="selected2">
+                <option value="0">0%</option>
+                <option value="0.05">5%</option>
+                <option value="0.08">8%</option>
+                <option value="0.1">10%</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="selected3">Số tiền là:</label>
+            <select id="selected3">
+                <option value="chua">Chưa bao gồm VAT</option>
+                <option value="da">Đã bao gồm VAT</option>
+            </select>
+        </div>
+        <div class="results">
+            <h2>Kết quả:</h2>
+            <p>Giá trước thuế: <span id="output1">0</span> VND</p>
+            <p>Thuế GTGT (VAT): <span id="output2">0</span> VND</p>
+            <p>Giá sau thuế: <span id="output3">0</span> VND</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
